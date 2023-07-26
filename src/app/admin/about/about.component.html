@@ -1,0 +1,44 @@
+<div class="container pt-5 pb-5">
+  <div class="col-12">
+      <div class="d-flex flex-wrap justify-content-between">
+          <div class="card shadow mt-2">
+              <div class="card-body">
+                  <h5 class="card-title">About Component</h5>
+                  <p class="card-text">Content itself is what the user derives value from. Thus, "content" can refer
+                      to the information provided through the medium, the way in which the information was presented,
+                      as well as the added features included in the medium in which that information was delivered.
+                      The medium, however, provides little to no value to the end-user without the information and
+                      experiences that make up the content.</p>
+                  <button (click)="getData()" class="btn btn-primary">Go somewhere</button>
+              </div>
+          </div>
+          <ag-grid-angular
+          class="ag-theme-alpine"
+          style="height: 500px; width: 100%;"
+          [rowData]="rowData"
+          [columnDefs]="columnDefs"
+          [defaultColDef]="defaultColDef"
+          >
+
+          </ag-grid-angular>
+          <!-- <table class="table mt-3">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Address</th>
+                <th scope="col">title</th>
+                <th scope="col">Numbers</th>
+                <th scope="col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of user">
+                <td>{{item.short_address_details.state}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.total_views}}</td>
+                <td>{{item.type}}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div> -->
+  </div>
+</div>
